@@ -23,6 +23,7 @@ body {
 
 .wrapper {
     background-color: #eee;
+    padding-right: 40px;
     height: 250px;
     width: 600px;
     border-radius: 10px;
@@ -34,7 +35,6 @@ body {
 
 .wrapper.active {
     height: 300px;
-    padding-right: 50px;
 }
 
 .wrapper.active .header h1 {
@@ -95,8 +95,14 @@ body {
     cursor: pointer;
 }
 
+.wrapper .form button:hover {
+    color: black;
+    background-color: #D9AFD9;
+    font-weight: bolder;
+}
+
 .wrapper .qr-code {
-    opacity: 0;
+    display: none;
     padding: 5px;
     margin: 20px;
     border: 1px solid #ccc;
@@ -109,6 +115,7 @@ body {
 }
 
 .wrapper.active .qr-code {
-    opacity: 1;
+    display: block;
     transition: all .5s .5s ease;
 }
+ 
